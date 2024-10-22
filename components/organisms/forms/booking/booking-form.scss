@@ -1,0 +1,266 @@
+.booking-form-inner {
+  width: 100%;
+
+  .booking-form {
+    margin: 0 auto;
+    padding: 32px 24px 24px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border);
+    border-radius: .6rem;
+
+    .title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--heading);
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: var(--heading);
+      margin-bottom: 24px;
+      line-height: 1.5rem;
+    }
+
+    .formkit-form .formkit-actions {
+      display: none;
+    }
+
+    .formkit-messages {
+      list-style-type: none;
+      color: var(--danger);
+      padding: 18px 0 0 0;
+      text-align: center;
+    }
+
+    .form-group-inline {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .form-group-row {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .form-group-input {
+      margin: 4px 0 24px;
+      width: 100%;
+
+      label {
+        font-size: .9rem;
+        color: var(--heading);
+      }
+
+      &:last-child {
+        margin-bottom: 24px;
+      }
+
+      .formkit-outer {
+        height: 52px;
+
+        .formkit-wrapper {
+
+          .formkit-inner {
+            display: flex;
+            align-items: center;
+            background-color: var(--background);
+
+            input:-webkit-autofill {
+              -webkit-text-fill-color: var(--heading);
+              -webkit-box-shadow: 0 0 0 100px var(--background) inset;
+            }
+
+            input {
+              cursor: pointer;
+              padding: 10px;
+              width: 100%;
+              border-radius: 4px;
+              color: var(--heading);
+              background-color: transparent;
+              border: 1px solid var(--gray-base);
+              border-radius: 12px;
+              height: 46px;
+              font-size: 1rem;
+
+              &:hover {
+                background-color: var(--background);
+                outline: none;
+              }
+
+              &::placeholder {
+                color: var(--gray-base);
+                font-size: .9rem;
+              }
+            }
+
+          }
+        }
+
+        .formkit-messages {
+          list-style-type: none;
+          color: var(--danger);
+          padding: 4px 0 0 0;
+          text-align: left;
+        }
+
+      }
+    }
+
+    .checkbox-option {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin: 10px 0 24px;
+
+      .formkit-outer {
+        padding: 10px;
+      }
+
+      .formkit-outer,
+      .formkit-wrapper,
+      .formkit-inner {
+        display: flex;
+        flex-direction: column;
+
+        input[type='checkbox'] {
+          accent-color: var(--primary);
+          height: 20px;
+          width: 20px;
+          cursor: pointer;
+        }
+      }
+
+      .formkit-messages {
+        display: block;
+        top: 100%;
+        position: absolute;
+        left: 0;
+        color: red;
+        padding: 0;
+        list-style-type: none;
+        right: 0;
+      }
+
+    }
+
+    .border-bottom {
+      border-bottom: 1px solid var(--gray-base);
+      margin: 24px 0;
+      width: 100%;
+    }
+
+    .book-appointment-submit {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 1.2rem 1.8rem;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .form-group-textarea {
+      width: 100%;
+
+      label {
+        font-size: .9rem;
+        color: var(--heading);
+      }
+
+      .formkit-outer {
+        height: 144px;
+
+        .formkit-wrapper {
+
+          .formkit-inner {
+            display: flex;
+            align-items: center;
+            background-color: var(--background);
+
+            input:-webkit-autofill {
+              -webkit-text-fill-color: var(--heading);
+              -webkit-box-shadow: 0 0 0 100px var(--background) inset;
+            }
+
+            textarea {
+              cursor: pointer;
+              padding: 10px;
+              width: 100%;
+              border-radius: 4px;
+              color: var(--heading);
+              background-color: transparent;
+              border: 1px solid var(--gray-base);
+              border-radius: 12px;
+              height: 120px;
+              font-size: 1rem;
+
+              &:hover {
+                background-color: var(--background);
+                outline: none;
+              }
+
+              &::placeholder {
+                color: var(--gray-base);
+                font-size: .9rem;
+              }
+            }
+
+          }
+        }
+
+        .formkit-messages {
+          list-style-type: none;
+          color: var(--danger);
+          padding: 4px 0 0 0;
+          text-align: left;
+        }
+
+      }
+    }
+
+  }
+
+  .booking-form-info {
+    margin: 0 auto;
+    max-width: var(--tablet-width);
+    padding: 40px 24px 30px;
+    box-shadow: var(--shadow-card);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .booking-form-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--heading-soft);
+      text-align: center;
+      margin-bottom: 8px;
+      line-height: 2.5rem;
+    }
+
+    .booking-form-description {
+      font-size: 1rem;
+      color: var(--heading);
+      text-align: center;
+      margin-bottom: 24px;
+      line-height: 1.5rem;
+    }
+
+  }
+
+  @media (max-width: 1024px) {
+    .booking-form {
+      margin-bottom: 150px;
+    }
+  }
+}

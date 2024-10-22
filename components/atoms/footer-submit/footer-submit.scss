@@ -1,0 +1,35 @@
+.booking-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background);
+  box-shadow: 0 -4px 6px -1px rgba(223, 187, 187, 0.2), 0 -2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  .booking-footer-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: var(--max-width);
+    padding: 24px;
+
+    .submit-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      margin-top: 32px;
+      padding: 1.2rem 1.8rem;
+      border-radius: 16px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      margin: 0;
+      background-color: var(--primary);
+    }
+
+  }
+  
+}

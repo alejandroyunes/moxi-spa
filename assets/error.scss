@@ -1,0 +1,27 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  text-align: center;
+  padding: 20px;
+
+
+  &-status {
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--background-opposite);
+  }
+
+  &-message {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  button {
+    margin-top: 20px;
+    max-width: 200px;
+  }
+}
