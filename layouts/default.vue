@@ -8,11 +8,11 @@ onMounted(() => {
     const theme = localStorage.getItem('theme')
 
     if (theme === null) {
-      localStorage.setItem('theme', 'dark')
-      document.documentElement.setAttribute("data-color-scheme", "dark")
+      localStorage.setItem('theme', 'light')
+      document.documentElement.setAttribute("data-color-scheme", "light")
       loading.value = false
     } else {
-      document.documentElement.setAttribute("data-color-scheme", theme === "dark" ? "dark" : "light")
+      document.documentElement.setAttribute("data-color-scheme", theme === "dark" ? "light" : "dark")
       loading.value = false
     }
   }
