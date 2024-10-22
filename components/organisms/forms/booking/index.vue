@@ -56,7 +56,7 @@ watch(isSuccess, (newValue) => {
 
 type Props = {
   booking: typeof formData.value.firstStep
-  bookingPayment: typeof formData.value.secondStep
+  payment: typeof formData.value.secondStep
 }
 
 const submitHandler = async (createForm: Props) => {
@@ -66,7 +66,7 @@ const submitHandler = async (createForm: Props) => {
     isFirstStep.value = false
   } else {
 
-    formData.value.secondStep = { ...createForm.bookingPayment }
+    formData.value.secondStep = { ...createForm.payment }
     stepsCompleted.value = true
 
     const data = {
@@ -83,7 +83,7 @@ const submitHandler = async (createForm: Props) => {
 
         await new Promise((resolve) => setTimeout(resolve, 2000))
 
-        console.log('data', data)
+        console.log('Combined Data:', data)
 
         isLoading.value = false
         isSuccess.value = true
@@ -173,7 +173,7 @@ const submitHandler = async (createForm: Props) => {
       </FormKit>
 
       <FormKit v-else type="form" id="payment-form" #default="{ state }" :actions="false" @submit="submitHandler">
-        <FormKit type="group" name="booking-payment">
+        <FormKit type="group" name="payment">
 
           <div class="form-group-inline">
 
